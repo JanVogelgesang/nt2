@@ -244,7 +244,7 @@ namespace nt2 { namespace memory
     template<typename K1,typename S1>
     void assign(nt2::memory::container<K1,Type,S1> const& other)
     {
-        sizes_ = other.sizes_;
+        resize(other.sizes_);
         copy(other.data_,data_);
     }
 
